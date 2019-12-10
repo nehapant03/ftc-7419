@@ -34,7 +34,7 @@ public class motorFunctionsTest extends LinearOpMode {
         waitForStart();
 
         while(opModeIsActive()){
-            runMotorWithEncoder(leftBack, 1120, .5);
+            runMotorWithEncoder(leftFront, 1120, .5);
         }
     }
 
@@ -48,7 +48,7 @@ public class motorFunctionsTest extends LinearOpMode {
         motor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         position = (int) (position * 1120 / (4 * 3.14159)); //converts inches to ticks
         telemetry.update();
-        position += motor.getCurrentPosition();
+        //position += motor.getCurrentPosition();
         motor.setTargetPosition(position);
         motor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         motor.setPower(power);
