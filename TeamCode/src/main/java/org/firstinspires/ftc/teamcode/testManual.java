@@ -38,7 +38,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
 @TeleOp(name="7419 Manual Mode", group="team7419")
-//@Disabled
+@Disabled
 public class testManual extends LinearOpMode {
 
     public DcMotor leftFront;
